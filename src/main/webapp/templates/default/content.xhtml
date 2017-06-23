@@ -1,0 +1,29 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets">
+    <div class="wrapper">
+        <ui:include src="leftMenu.xhtml" />
+        <ui:include src="header.xhtml" />
+        <div class="site-content">
+            <div class="content-area p-y-1">
+                <div class="container-fluid">
+                        <h4>INICIO</h4>
+                        <ol class="breadcrumb no-bg m-b-1">
+                                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        </ol>
+                        
+                    <!-- Content -->
+                    <ui:insert name="content" /> 
+                </div>
+            </div>
+                
+                <!-- Footer -->
+                <footer class="footer">
+                        <div class="container-fluid">
+                                2017 CSSP-TI
+                        </div>
+                </footer>
+        </div>
+    </div>
+
+</ui:composition>
+
